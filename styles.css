@@ -280,6 +280,22 @@ section p {
     transform: translateX(3px);
 }
 
+/* ─── Domain Expertise ──────────────────────────────────────── */
+
+.list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--text-muted);
+}
+
+.list li::before {
+    content: '◈ ';
+    color: var(--accent);
+}
+
 /* ─── Footer ─────────────────────────────────────────────── */
 footer {
     text-align: center;
