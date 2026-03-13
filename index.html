@@ -6,123 +6,146 @@
     <title>Michael Daniels</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- ─── Sticky Nav ─────────────────────────────────────── -->
+<nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+        <span class="nav-logo">MD</span>
+        <ul class="nav-links">
+            <li><a href="#about"        class="nav-link" data-section="about">About</a></li>
+            <li><a href="#work_history" class="nav-link" data-section="work_history">Work</a></li>
+            <li><a href="#education"    class="nav-link" data-section="education">Education</a></li>
+            <li><a href="#expertise"    class="nav-link" data-section="expertise">Skills</a></li>
+            <li><a href="#contact"      class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+        <a href="resume.pdf" target="_blank" class="nav-resume">Resume ↓</a>
+    </div>
+</nav>
+
+<!-- ─── Hero ───────────────────────────────────────────── -->
 <header class="hero">
     <div class="hero-grid"></div>
-
     <div class="hero-content">
-        <img src="Michael_PFP.jpg" alt="Michael Daniels" class="profile-photo">
+        <img src="images/Michael_PFP.jpg" alt="Michael Daniels" class="profile-photo">
         <h1>Michael Daniels</h1>
         <p class="hero-tagline">Data Scientist &amp; Machine Learning Engineer</p>
-
         <div class="hero-links">
             <a href="https://github.com/mpdaniels414" target="_blank" rel="noopener noreferrer" class="hero-btn">GitHub</a>
             <a href="https://www.linkedin.com/in/michaelpedersendaniels/" target="_blank" rel="noopener noreferrer" class="hero-btn">LinkedIn</a>
             <a href="resume.pdf" target="_blank" class="hero-btn hero-btn--accent">Resume ↓</a>
         </div>
-
         <div class="hero-links">
-            <a href="https://www.instagram.com/mikey_math_daily/" target="_blank" rel="noopener noreferrer" class="hero-btn">Math Instagram Page</a>
+            <a href="https://www.instagram.com/mikey_math_daily/" target="_blank" rel="noopener noreferrer" class="hero-btn">Math Instagram</a>
             <a href="#" class="hero-btn">Upcoming Blog</a>
         </div>
+        <a href="#about" class="hero-scroll-cue" aria-label="Scroll down">
+            <span class="scroll-chevron">↓</span>
+        </a>
     </div>
 </header>
 
 <main>
 
-    <section id="about">
+    <!-- ─── About ─────────────────────────────────────────── -->
+    <section id="about" class="reveal">
         <div class="section-label">01 — About Me</div>
         <p>I am a data scientist working at Carnegie Mellon University, with a background in Data Science &amp; Statistics from Georgia Tech and Applied Mathematics from the University of Georgia.</p>
-        <p>Before you ask about any potential dual-loyalty to Georgia and Georgia Tech, I root for Georgia; I’d sooner be caught dead than in yellow and blue.</p>
+        <p>Before you ask about any potential dual-loyalty to Georgia and Georgia Tech, I root for Georgia; I'd sooner be caught dead than in yellow and blue.</p>
     </section>
 
-    <section id="work_history">
+    <!-- ─── Work History ──────────────────────────────────── -->
+    <section id="work_history" class="reveal">
         <div class="section-label">02 — Work History</div>
-        <p>If you want to learn more, download my resume. I'm not going to clog up space rewriting what's already in my resume.</p>
-        <div class="edu-list">
+        <p class="section-sub">Download my resume for the full picture.</p>
 
-            <div class="edu-item">
-                <div class="edu-icon">◈</div>
-                <div>
-                    <span class="edu-degree">Carnegie Mellon University</span>
-                    <ul class="list">
-                        <li>Data Scientist (2025-Present)</li>
-                    </ul>
+        <div class="timeline">
+
+            <div class="tl-item reveal-child">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-header">
+                        <span class="tl-company">Carnegie Mellon University</span>
+                        <span class="tl-period">2025 – Present</span>
+                    </div>
+                    <span class="tl-role">Data Scientist</span>
                 </div>
             </div>
 
-            <div class="edu-item">
-                <div class="edu-icon">◈</div>
-                <div>
-                    <span class="edu-degree">W.R. Berkley</span>
-                    <ul class="list">
-                        <li>Senior Data Scientist (2024-2025)</li>
-                    </ul>
+            <div class="tl-item reveal-child">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-header">
+                        <span class="tl-company">W.R. Berkley</span>
+                        <span class="tl-period">2024 – 2025</span>
+                    </div>
+                    <span class="tl-role">Senior Data Scientist</span>
                 </div>
             </div>
 
-            <div class="edu-item">
-                <div class="edu-icon">◈</div>
-                <div>
-                    <span class="edu-degree">Georgia Tech Research Institute</span>
-                    <ul class="list">
-                        <li>Machine Learning Engineer (2024-2024)</li>
-                    </ul>
+            <div class="tl-item reveal-child">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-header">
+                        <span class="tl-company">Georgia Tech Research Institute</span>
+                        <span class="tl-period">2024-2024</span>
+                    </div>
+                    <span class="tl-role">Grad Assistant Machine Learning Engineer</span>
                 </div>
             </div>
 
-            <div class="edu-item">
-                <div class="edu-icon">◈</div>
-                <div>
-                    <span class="edu-degree">Deloitte</span>
-                    <ul class="list">
-                        <li>Manager (2023-2023)</li>
-                        <li>Senior Consultant (2021-2023)</li>
-                    </ul>
+            <div class="tl-item reveal-child">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-header">
+                        <span class="tl-company">Deloitte</span>
+                        <span class="tl-period">2021 – 2023</span>
+                    </div>
+                    <span class="tl-role">Senior Consultant → Manager</span>
                 </div>
             </div>
 
-            <div class="edu-item">
-                <div class="edu-icon">◈</div>
-                <div>
-                    <span class="edu-degree">New York Life</span>
-                    <ul class="list">
-                        <li>Actuarial Analyst (2020-2021)</li>
-                        <li>Underwriting/Mortality Analytics Analyst (2017-2020)</li>
-                    </ul>
+            <div class="tl-item reveal-child">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-header">
+                        <span class="tl-company">New York Life</span>
+                        <span class="tl-period">2017 – 2021</span>
+                    </div>
+                    <span class="tl-role">Underwriting/Mortality Analytics Analyst → Actuarial Analyst</span>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section id="education">
+    <!-- ─── Education ─────────────────────────────────────── -->
+    <section id="education" class="reveal">
         <div class="section-label">03 — Education</div>
         <div class="edu-list">
 
-            <div class="edu-item">
-                <div class="edu-icon">◈</div>
-                <div>
-                    <span class="edu-degree">Georgia Tech (2024): M.S. Data Science &amp; Statistics</span>
-                    <ul class="list">
-                        <li>Coursework included Bayesian Statistics, Data Visualization, Simulations, Time Series Analysis, Advanced Statistical Modeling, and Machine Learning.</li>
-                        <li>Applied the skills learned in projects with real-world applications, including predictive modeling, natural language processing, and large-scale data visualization. Sample projects are on my GitHub.</li>
-                        <li>Tools &amp; Technologies: Python (pandas, scikit-learn, TensorFlow), C++, R, ARENA, RShiny, NEO4J, SQL, Tableau, PowerBI, Git.</li>
+            <div class="gt-edu-item reveal-child">
+                <div class="gt-edu-icon">◈</div>
+                <div class="gt-edu-content">
+                    <span class="gt-edu-degree">Georgia Tech (2024): M.S. Data Science &amp; Statistics</span>
+                    <ul class="gt-list">
+                        <li>Coursework: Bayesian Statistics, Data Visualization, Simulations, Time Series Analysis, Advanced Statistical Modeling, and Machine Learning.</li>
+                        <li>Applied skills in real-world projects including predictive modeling, NLP, and large-scale data visualization. Sample projects on GitHub.</li>
+                        <li>Tools: Python (pandas, scikit-learn, TensorFlow), C++, R, ARENA, RShiny, NEO4J, SQL, Tableau, PowerBI, Git.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="edu-item">
-                <div class="edu-icon">◈</div>
-                <div class="edu-content">
-                    <span class="edu-degree">University of Georgia (2017): B.S. Applied Mathematics</span>
-                    <ul class="list">
-                        <li>Coursework included Numerical Analysis, Financial Calculus, Partial and Ordinary Differential Equations, and Statistical Analysis.</li>
+            <div class="uga-edu-item reveal-child">
+                <div class="uga-edu-icon">◈</div>
+                <div class="uga-edu-content">
+                    <span class="uga-edu-degree">University of Georgia (2017): B.S. Applied Mathematics</span>
+                    <ul class="uga-list">
+                        <li>Coursework: Numerical Analysis, Financial Calculus, PDEs/ODEs, and Statistical Analysis.</li>
                         <li>Built a strong foundation in quantitative reasoning, mathematical modeling, and computational methods.</li>
-                        <li>Skills Developed: MATLAB, Python, R, mathematical modeling, statistical computation, and problem-solving strategies for complex systems.</li>
+                        <li>Tools: MATLAB, Python, R, mathematical modeling, statistical computation.</li>
                     </ul>
                 </div>
             </div>
@@ -130,16 +153,62 @@
         </div>
     </section>
 
-    <section id="expertise">
+    <!-- ─── Expertise ─────────────────────────────────────── -->
+    <section id="expertise" class="reveal">
         <div class="section-label">04 — Expertise</div>
-        <ul class="list">
-            <li>Machine Learning</li>
-            <li>Simulation Modeling</li>
-            <li>Estimation Methodologies</li>
-            <li>Statistical Modeling</li>
-            <li>Data Visualization</li>
-            <li>Web Design</li>
-        </ul>
+        <div class="skill-grid">
+            <div class="skill-chip reveal-child">
+                <span class="skill-icon">⬡</span>
+                <span>Machine Learning</span>
+            </div>
+            <div class="skill-chip reveal-child">
+                <span class="skill-icon">⬡</span>
+                <span>Simulation Modeling</span>
+            </div>
+            <div class="skill-chip reveal-child">
+                <span class="skill-icon">⬡</span>
+                <span>Estimation Methodologies</span>
+            </div>
+            <div class="skill-chip reveal-child">
+                <span class="skill-icon">⬡</span>
+                <span>Statistical Modeling</span>
+            </div>
+            <div class="skill-chip reveal-child">
+                <span class="skill-icon">⬡</span>
+                <span>Data Visualization</span>
+            </div>
+            <div class="skill-chip reveal-child">
+                <span class="skill-icon">⬡</span>
+                <span>Web Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Contact ───────────────────────────────────────── -->
+    <section id="contact" class="reveal">
+        <div class="section-label">05 — Contact</div>
+        <div class="contact-links">
+            <a href="https://github.com/mpdaniels414" target="_blank" rel="noopener noreferrer" class="contact-card reveal-child">
+                <span class="contact-card__icon">⌥</span>
+                <span class="contact-card__label">GitHub — mpdaniels414</span>
+                <span class="contact-card__arrow">→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/michaelpedersendaniels/" target="_blank" rel="noopener noreferrer" class="contact-card reveal-child">
+                <span class="contact-card__icon">◎</span>
+                <span class="contact-card__label">LinkedIn — michaelpedersendaniels</span>
+                <span class="contact-card__arrow">→</span>
+            </a>
+            <a href="https://www.instagram.com/mikey_math_daily/" target="_blank" rel="noopener noreferrer" class="contact-card reveal-child">
+                <span class="contact-card__icon">◉</span>
+                <span class="contact-card__label">Instagram — mikey_math_daily</span>
+                <span class="contact-card__arrow">→</span>
+            </a>
+            <a href="resume.pdf" target="_blank" class="contact-card contact-card--accent reveal-child">
+                <span class="contact-card__icon">↓</span>
+                <span class="contact-card__label">Download Resume</span>
+                <span class="contact-card__arrow">→</span>
+            </a>
+        </div>
     </section>
 
 </main>
@@ -148,5 +217,52 @@
     <p>© 2026 Michael Daniels</p>
 </footer>
 
+<script>
+    // ─── Scroll-triggered reveal ──────────────────────────────
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(el => {
+            if (el.isIntersecting) {
+                el.target.classList.add('visible');
+                observer.unobserve(el.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal, .reveal-child').forEach(el => observer.observe(el));
+
+    // Stagger reveal-child within a visible parent
+    const childObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const children = entry.target.querySelectorAll('.reveal-child');
+                children.forEach((child, i) => {
+                    setTimeout(() => child.classList.add('visible'), i * 90);
+                });
+            }
+        });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('section').forEach(s => childObserver.observe(s));
+
+    // ─── Sticky nav — scroll state & active section ──────────
+    const nav = document.getElementById('site-nav');
+    const sections = document.querySelectorAll('main section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+        // Scrolled class
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+
+        // Active link
+        let current = '';
+        sections.forEach(sec => {
+            if (window.scrollY >= sec.offsetTop - 140) current = sec.id;
+        });
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.dataset.section === current);
+        });
+    }, { passive: true });
+</script>
 </body>
 </html>
+
