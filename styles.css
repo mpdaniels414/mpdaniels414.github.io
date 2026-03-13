@@ -242,6 +242,7 @@ section p {
 }
 
 .uga-edu-item {
+    position: relative; /* needed for pseudo-element */
     display: flex;
     align-items: flex-start;
     gap: 1.1rem;
@@ -249,12 +250,28 @@ section p {
     border: 1px solid var(--border);
     border-radius: 4px;
     padding: 1.2rem 1.4rem;
-    transition: background 0.5s ease-in-out;
+    overflow: hidden; /* ensures pseudo-element stays inside */
+    transition: border-color 0.2s;
 }
 
-.uga-edu-item:hover {
-    border-color: var(--accent-dim);
+.uga-edu-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background: url('UGA_Good_Boy.jpg') center/cover no-repeat;
+    opacity: 0; /* start invisible */
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+    border-radius: 4px; /* match parent */
+}
+
+.uga-edu-item:hover::before {
+    opacity: 0.3; /* adjust how visible you want the hover image */
+}
+
+.uga-edu-item > * {
+    position: relative; /* keep content above pseudo-element */
+    z-index: 1;
 }
 
 .uga-edu-icon {
