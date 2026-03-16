@@ -466,7 +466,6 @@ section p {
 .gt-edu-item:hover::before { opacity: 0.25; }
 .gt-edu-item > * { position: relative; z-index: 1; }
 
-/* Fixed: #003057 is invisible on dark bg — using GT Gold instead */
 .gt-edu-icon {
     color: #B3A369;
     font-size: 1.1rem;
